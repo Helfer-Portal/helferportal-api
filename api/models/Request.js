@@ -6,9 +6,7 @@
  */
 
 module.exports = {
-
   attributes: {
-
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
@@ -29,7 +27,7 @@ module.exports = {
 
     description: {
       type: 'string',
-      required: true,
+      required: true
     },
 
     positiveResponses: {
@@ -49,7 +47,6 @@ module.exports = {
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
 
-
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
@@ -58,7 +55,7 @@ module.exports = {
     },
 
     organisation: {
-      model: 'Organisation'
+      model: 'organisation'
     },
 
     qualities: {
@@ -70,7 +67,5 @@ module.exports = {
       collection: 'user',
       via: 'participation'
     }
-  },
-
+  }
 };
-
