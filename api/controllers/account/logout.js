@@ -31,7 +31,6 @@ actually logged in.  (If they weren't, then this action is just a no-op.)`,
 
   },
 
-
   fn: async function () {
 
     // Clear the `userId` property from this session.
@@ -45,6 +44,4 @@ actually logged in.  (If they weren't, then this action is just a no-op.)`,
     }
 
   }
-
-
 };
