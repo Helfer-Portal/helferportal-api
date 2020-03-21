@@ -84,6 +84,13 @@ email status until they click the link in the confirmation email.`
       example: 1502844074211
     },
 
+
+
+    base_phone: {
+      type: 'string',
+      required: true,
+    },
+
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
@@ -94,6 +101,9 @@ email status until they click the link in the confirmation email.`
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
     // n/a
 
+    address: {
+      model: 'address'
+    }
   },
 
 
