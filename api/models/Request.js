@@ -18,13 +18,6 @@ module.exports = {
       example: 'true = offen, false = closed.'
     },
 
-    coordinator: {
-      type: 'string',
-      required: true,
-      description: 'Wer hat die Verantwortung',
-      example: 'Karl Ganz'
-    },
-
     description: {
       type: 'string',
       required: true
@@ -50,6 +43,11 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
+
+    coordinator: {
+      model: 'user'
+    },
+
     address: {
       model: 'address'
     },
