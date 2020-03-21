@@ -12,19 +12,19 @@ module.exports = {
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
     name: {
-      type: "string",
+      type: 'string',
       required: true,
-      description: "name of the quality",
+      description: 'name of the quality',
       protect: true,
-      example: "Schleppen, Blutspende, ... "
+      example: 'Schleppen, Blutspende, ... '
     },
 
     type: {
-      type: "number",
+      type: 'number',
       required: true,
-      description: "1: skills, 2: handicaps, 3: tools",
+      description: '1: skills, 2: handicaps, 3: tools',
       protect: true,
-      example: "1"
+      example: '1'
     },
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
@@ -36,14 +36,14 @@ module.exports = {
 
     // Add a reference to User
     owningUsers: {
-      collection: "user",
-      via: "qualities"
+      collection: 'user',
+      via: 'qualities'
     },
 
     // Add a reference to Request
     owningRequests: {
-      collection: "request",
-      via: "qualities"
+      collection: 'request',
+      via: 'qualities'
     }
   }
 };
