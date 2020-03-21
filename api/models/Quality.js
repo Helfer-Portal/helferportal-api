@@ -27,7 +27,7 @@ module.exports = {
       description: '1: skills, 2: handicaps, 3: tools',
       protect: true,
       example: '1'
-    }
+    },
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
@@ -36,6 +36,18 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
+
+    // Add a reference to User
+    owningUsers: {
+      collection: 'user',
+      via: 'qualities'
+    },
+
+    // Add a reference to User
+    owningRequests: {
+      collection: 'request',
+      via: 'qualities'
+    }
 
   },
 

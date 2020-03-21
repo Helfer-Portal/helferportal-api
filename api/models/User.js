@@ -12,6 +12,21 @@ module.exports = {
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
+    name: {
+      type: 'string',
+      required: true,
+    },
+
+    surname: {
+      type: 'string',
+      required: true,
+    },
+
+    logo: {
+      type: 'string',
+      required: true,
+    },
+
     emailAddress: {
       type: 'string',
       required: true,
@@ -84,9 +99,7 @@ email status until they click the link in the confirmation email.`
       example: 1502844074211
     },
 
-
-
-    base_phone: {
+    phone: {
       type: 'string',
       required: true,
     },
@@ -103,6 +116,16 @@ email status until they click the link in the confirmation email.`
 
     address: {
       model: 'address'
+    },
+
+    qualities: {
+      collection: 'quality',
+      via: 'owningUsers'
+    },
+
+    participation: {
+      collection: 'request',
+      via: 'registrations'
     }
   },
 
