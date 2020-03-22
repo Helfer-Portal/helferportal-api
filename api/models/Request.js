@@ -6,9 +6,7 @@
  */
 
 module.exports = {
-
   attributes: {
-
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
@@ -17,12 +15,6 @@ module.exports = {
       type: 'boolean',
       description: 'aktive ja/nein?',
       example: 'true = offen, false = closed.'
-    },
-
-    coordinator: {
-      type: 'string',
-      description: 'Wer hat die Verantwortung',
-      example: 'Karl Ganz'
     },
 
     description: {
@@ -54,16 +46,20 @@ module.exports = {
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
 
-
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
+
+    coordinator: {
+      model: 'user'
+    },
+
     address: {
       model: 'address'
     },
 
     organisation: {
-      model: 'Organisation'
+      model: 'organisation'
     },
 
     qualities: {
@@ -75,7 +71,5 @@ module.exports = {
       collection: 'user',
       via: 'participation'
     }
-  },
-
+  }
 };
-
