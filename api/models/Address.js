@@ -15,34 +15,28 @@ module.exports = {
 
     geom: {
       type: 'json',
-      required: true,
       description: 'JSON zu den Koordinaten',
       example: 'Ihr helfer in der Not mit ....'
     },
 
     street: {
       type: 'string',
-      required: true,
     },
 
     hn: {
       type: 'string',
-      required: true,
     },
 
     zip: {
       type: 'number',
-      required: true,
     },
 
     city: {
       type: 'string',
-      required: true,
     },
 
     country: {
       type: 'string',
-      required: true,
     },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗

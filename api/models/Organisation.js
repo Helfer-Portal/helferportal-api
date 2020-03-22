@@ -52,17 +52,6 @@ module.exports = {
       required: true,
     },
 
-    start: {
-      type: 'string',
-      columnType: 'datetime',
-      required: true,
-    },
-
-    end: {
-      type: 'string',
-      columnType: 'datetime',
-      required: true,
-    },
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝

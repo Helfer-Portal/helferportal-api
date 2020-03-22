@@ -15,35 +15,40 @@ module.exports = {
 
     status: {
       type: 'boolean',
-      required: true,
       description: 'aktive ja/nein?',
       example: 'true = offen, false = closed.'
     },
 
     coordinator: {
       type: 'string',
-      required: true,
       description: 'Wer hat die Verantwortung',
       example: 'Karl Ganz'
     },
 
     description: {
       type: 'string',
-      required: true,
     },
 
     positiveResponses: {
       type: 'number',
-      required: true,
       description: 'Wieviele Personen haben sich positiv zurück gemeldet',
       example: '44'
     },
 
     activeHelpers: {
       type: 'number',
-      required: true,
       description: 'Personen am Einsatz Ort',
       example: '22'
+    },
+
+    start: {
+      type: 'string',
+      columnType: 'timestamp',
+    },
+
+    end: {
+      type: 'string',
+      columnType: 'timestamp',
     },
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
