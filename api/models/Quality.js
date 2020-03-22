@@ -6,32 +6,25 @@
  */
 
 module.exports = {
-
   attributes: {
-
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
     name: {
       type: 'string',
-      required: true,
       description: 'name of the quality',
-      protect: true,
       example: 'Schleppen, Blutspende, ... '
     },
 
     type: {
       type: 'number',
-      required: true,
       description: '1: skills, 2: handicaps, 3: tools',
-      protect: true,
       example: '1'
     },
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
-
 
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
@@ -43,13 +36,10 @@ module.exports = {
       via: 'qualities'
     },
 
-    // Add a reference to User
+    // Add a reference to Request
     owningRequests: {
       collection: 'request',
       via: 'qualities'
     }
-
-  },
-
+  }
 };
-
