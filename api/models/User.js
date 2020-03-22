@@ -14,17 +14,14 @@ module.exports = {
 
     name: {
       type: 'string',
-      required: true,
     },
 
     surname: {
       type: 'string',
-      required: true,
     },
 
     logo: {
       type: 'string',
-      required: true,
     },
 
     emailAddress: {
