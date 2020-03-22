@@ -11,6 +11,9 @@
 
 module.exports.blueprints = {
 
+  prefix: '/api/v1',
+  pluralize: true,
+
   /***************************************************************************
   *                                                                          *
   * Automatically expose implicit routes for every action in your app?       *
@@ -36,6 +39,6 @@ module.exports.blueprints = {
   *                                                                          *
   ***************************************************************************/
 
-  shortcuts: true,
+  // shortcuts: true,
 
 };

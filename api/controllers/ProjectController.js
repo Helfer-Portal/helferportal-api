@@ -6,7 +6,14 @@ const SailsEmber = require('sails-ember-rest');
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
 
-const controller = new SailsEmber.controller({});
+const controller = new SailsEmber.controller({
+  create(req, res) {
+    console.log(
+      'CREATE project param',
+      req.param('project')
+    );
+    return SailsEmber.actions.create()(req, res);
+  }
+});
 
 module.exports = controller;
-
