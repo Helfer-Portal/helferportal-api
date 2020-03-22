@@ -2,7 +2,7 @@
 Backend des Portales in Sails.js
 
 // RUN DATABASE
-docker run -e POSTGRES_PASSWORD=root -p 5432:5432 -d mdillon/postgis
+docker run --name some-postgis  -e POSTGRES_PASSWORD=root -p 5432:5432 -d mdillon/postgis
 
 database > database erstellen mit pgadmin oder psql
 docker run -it --link some-postgis:postgres --rm postgres \
