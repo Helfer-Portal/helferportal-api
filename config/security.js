@@ -34,6 +34,23 @@ module.exports.security = {
   //   allowCredentials: false,
   // },
 
+  cors: {
+    allRoutes: true,
+    allowOrigins: [
+      // ISY_BASE_URL,
+      'https://localhost:4200',
+      'http://localhost:4200',
+      'https://10.0.9.14:4200',
+      'http://10.0.9.14:4200',
+      'https://help-on-spot.de',
+      'http://help-on-spot.de'
+    ],
+    allowCredentials: true
+    // allowAnyOriginWithCredentialsUnsafe: true,
+    // allowRequestMethods: 'GET,PUT,PATCH,POST,OPTIONS,HEAD',
+    // allowRequestHeaders: 'content-type,credentials'
+  }
+
 
   /****************************************************************************
   *                                                                           *
